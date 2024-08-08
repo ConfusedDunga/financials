@@ -173,7 +173,7 @@ def metric_breakdown(df):
 
 # Main Streamlit app
 def main():
-    st.title("Banking Metrics Dashboard")
+    st.title("Quarterly Reports")
 
     # Load data
     file_path = "data.csv"  # Replace with your actual file path
