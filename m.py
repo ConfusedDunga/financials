@@ -5,7 +5,7 @@ from io import BytesIO
 # Load data from a predefined Excel file path
 @st.cache_data
 def load_data(file_path):
-    df = pd.read_csv(file_path)
+    df = pd.read_excel(file_path)
     return df
 
 # Aggregate data
@@ -176,7 +176,7 @@ def main():
     st.title("Quarterly Reports")
 
     # Load data
-    file_path = "data.csv"  # Replace with your actual file path
+    file_path = "newdata.xlsx"  # Replace with your actual file path
     df = load_data(file_path)
 
     # Navigation
